@@ -1,0 +1,56 @@
+@mixin flexCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin inputCss {
+  font-size: 20px;
+  padding: 15px;
+  width: 500px;
+  border: none;
+}
+
+$primary: rgb(50, 218, 120);
+
+.container {
+  @include flexCentre();
+
+  input {
+    @include inputCss();
+  }
+  button {
+    @include inputCss();
+    width: 130px;
+    background-color: $primary;
+    cursor: pointer;
+  }
+}
+
+.main {
+  h1 {
+    text-align: center;
+  }
+}
+
+.list {
+  padding: 15px;
+  div {
+    text-align: center;
+    padding: 15px;
+
+    input {
+      @include inputCss();
+    }
+    .edit {
+      background-color: rgb(255, 81, 0);
+    }
+    button {
+      font-size: 20px;
+      padding: 15px;
+      border: none;
+      background-color: red;
+      cursor: pointer;
+    }
+  }
+}
