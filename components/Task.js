@@ -44,7 +44,7 @@ function Task(props) {
 
 
                     {edit===ind ? (
-                        <button className={styles.edit} id={ind} onClick={()=>{
+                        <button className={styles.save} id={ind} onClick={()=>{
                             handleSubmit(ind);
                         }} >
                         <i className="fa fa-save"></i></button>

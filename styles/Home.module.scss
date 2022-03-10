@@ -9,9 +9,10 @@
   padding: 15px;
   width: 500px;
   border: none;
+  border-radius: 2px;
 }
 
-$primary: rgb(50, 218, 120);
+$primary: #40005d;
 
 .container {
   @include flexCentre();
@@ -22,6 +23,7 @@ $primary: rgb(50, 218, 120);
   button {
     @include inputCss();
     width: 130px;
+    color: white;
     background-color: $primary;
     cursor: pointer;
   }
@@ -45,12 +47,16 @@ $primary: rgb(50, 218, 120);
     .edit {
       background-color: rgb(255, 81, 0);
     }
+    .save {
+      background-color: rgba(0, 128, 0, 0.863);
+    }
     button {
       font-size: 20px;
       padding: 15px;
       border: none;
       background-color: red;
       cursor: pointer;
+      border-radius: 2px;
     }
   }
 }
